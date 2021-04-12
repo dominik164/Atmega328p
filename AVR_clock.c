@@ -125,7 +125,7 @@ int main(void)
                         HOU++;
                     }
                     MIN = 0;
-                    _delay_ms(220);
+                    
                 }
             }
             if (bit_is_clear(PINA, 1))
@@ -133,7 +133,7 @@ int main(void)
                 if (MIN > 0)
                 {
                     MIN--;
-                    _delay_ms(220);
+                   
                 }
             }
             if (bit_is_clear(PINA, 2))
@@ -142,7 +142,7 @@ int main(void)
                 {
                     HOU++;
                 }
-                _delay_ms(220);
+                
                 if (HOU == 24)
                 {
                     HOU = 0;
@@ -153,7 +153,7 @@ int main(void)
                 if (HOU > 0)
                 {
                     HOU--;
-                    _delay_ms(220);
+                    
                 }
             }
         }
@@ -166,7 +166,7 @@ int main(void)
                 if (ALMIN < 60)
                 {
                     ALMIN++;
-                    _delay_ms(220);
+                    
                 }
                 if (ALMIN == 60)
                 {
@@ -175,7 +175,7 @@ int main(void)
                         ALHOU++;
                     }
                     ALMIN = 0;
-                    _delay_ms(220);
+                    
                 }
             }
             if (bit_is_clear(PINA, 1))
@@ -183,7 +183,7 @@ int main(void)
                 if (ALMIN > 0)
                 {
                     ALMIN--;
-                    _delay_ms(220);
+                   
                 }
             }
             if (bit_is_clear(PINA, 2))
@@ -192,7 +192,7 @@ int main(void)
                 {
                     ALHOU++;
                 }
-                _delay_ms(220);
+                
                 if (ALHOU == 24)
                 {
                     ALHOU = 0;
